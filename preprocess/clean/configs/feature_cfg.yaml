@@ -1,0 +1,16 @@
+magnetic_elems: ["Fe","Co","Ni","Mn","Cr","V","Gd","Tb","Dy","Ho","Er","Tm","Eu","Nd","Pr","Sm","Ce","Yb","U","Np","Pu"]
+rare_earth_elems: ["La","Ce","Pr","Nd","Pm","Sm","Eu","Gd","Tb","Dy","Ho","Er","Tm","Yb","Lu","Sc","Y"]
+strong_soc_elems: ["Pt","Pd","Ir","Os","Re","W","Ta","Hf","Au","Bi","Pb","Tl","Hg","U","Np","Pu","Th","Pa"]
+invalid_elem_strs: ["X","Xx","Du","D","An","Ln"]
+
+centro_sg_set: [2,10,11,12,13,14,15,47,48,49,50,51,52,53,54,55,56,57,58,59,60,
+  61,62,63,64,65,66,67,68,69,70,71,72,73,74,83,84,85,86,87,88,
+  123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,
+  147,148,162,163,164,165,166,167,175,176,191,192,193,194,
+  200,201,202,203,204,205,206,221,222,223,224,225,226,227,228,229,230]
+
+leak_keywords: ["moment","magn","irrep","propagation","transition_temp","temp_x","experiment_temp","bns","symmform","time_reversal"]
+
+miss_threshold: 0.3
+float_tolerance: 0.01
+special_frac_tol: 0.01

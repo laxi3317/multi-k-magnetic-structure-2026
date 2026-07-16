@@ -1,0 +1,103 @@
+seed: 42
+random_state: 42
+test_size: 0.2
+cv_splits: 5
+
+input_csv: "magnetic_features_final.csv"
+output_dir: "outputs"
+model_save_dir: "outputs/binary_models"
+
+knn_imp_n_neighbors: 7
+variance_threshold: 0.001
+et_estimators: 500
+imp_percent_cut: 5
+
+smote_target_count: 600
+
+recall_floor: 0.70
+precision_floor: 0.35
+th_start: 0.03
+th_end: 0.85
+th_step: 0.005
+
+lgb_params:
+  n_estimators: 3000
+  learning_rate: 0.015
+  max_depth: 8
+  num_leaves: 63
+  min_child_samples: 2
+  subsample: 0.8
+  colsample_bytree: 0.7
+  reg_alpha: 0.05
+  reg_lambda: 0.1
+  verbose: -1
+
+rf_et_params:
+  n_estimators: 1000
+  max_features: "sqrt"
+  min_samples_leaf: 1
+
+xgb_params:
+  n_estimators: 1500
+  learning_rate: 0.02
+  max_depth: 7
+  subsample: 0.8
+  colsample_bytree: 0.7
+  eval_metric: "logloss"
+  verbosity: 0
+
+stack_lr:
+  c_list: [0.001, 0.005, 0.01, 0.05, 0.1, 0.5, 1.0, 5.0, 10.0]
+  max_iter: 3000
+
+exclude_cols:
+  - label
+  - filename
+  - k_vector
+  - irrep
+  - mag_sym
+  - bns
+  - magnetic_sg
+  - time_reversal
+  - symmform
+  - num_k
+  - k_mag
+  - label_merged
+  - y_orig
+  - y_merged
+  - label_binary
+
+zero_fill_patterns:
+  - has_
+  - sg_in_
+  - cs_is_
+  - cs_low
+  - cs_mid
+  - cs_high
+  - cs_has_hex
+  - cs_is_cubic
+  - is_right_angle
+  - has_3d
+  - has_4d5d
+  - has_4f
+  - has_5f
+  - has_strong_soc
+  - has_heavy_mag
+  - sg_in_frustrated
+  - sg_in_hexagonal
+  - sg_in_trigonal
+  - frustrated_x_
+  - fi_x_
+  - multi_type_x_
+  - has_magnetic_elem
+  - has_rare_earth
+  - has_tm_and_re
+  - has_partial_occ
+  - angle_all_90
+
+colors:
+  LightGBM: "#E74C3C"
+  RF: "#3498DB"
+  XGBoost: "#2ECC71"
+  ET: "#F39C12"
+  Stacking: "#9B59B6"

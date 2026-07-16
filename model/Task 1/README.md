@@ -1,0 +1,1 @@
+python run_train_binary.py --cfg configs/train_cfg.yaml

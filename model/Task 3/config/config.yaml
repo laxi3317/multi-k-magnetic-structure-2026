@@ -1,0 +1,41 @@
+# 全局基础
+SEED: 42
+RANDOM_STATE: 42
+TEST_SIZE: 0.2
+N_SPLITS: 5
+INPUT_CSV: "magnetic_features_final.csv"
+SAVE_DIR: "cascade_models"
+# 标签映射
+label3_map: {"1k":0, "2k":1, "3_4k":2}
+# 特征排除列
+EXCLUDE_COLS: [
+    'label', 'label_std', 'filename','k_vector', 'irrep', 'mag_sym', 'bns',
+    'magnetic_sg', 'time_reversal', 'symmform','num_k', 'k_mag',
+    'label_merged', 'y_orig', 'y_merged', 'label_binary'
+]
+
+BLACKLIST_EXACT: [...]
+BLACKLIST_SUBSTR: [...]
+ZERO_FILL_PATTERNS: [...]
+
+S1_TH_INIT: 0.14
+SMOTE_TARGET: 600
+KNN_IMP_N:7
+VAR_THRESH:0.001
+ET_SEL_EST:500
+
+S1_TH_GRID_START:0.10
+S1_TH_GRID_END:0.40
+S1_TH_GRID_STEP:0.02
+TH_34K_GRID_START:0.25
+TH_34K_GRID_END:0.75
+TH_34K_GRID_STEP:0.02
+UNCERTAINTY_GRID: [0.05,0.07,...,0.40]
+
+lgb_s1_params: {...}
+rf_s1_params: {...}
+
+lgb_s2_params: {...}
+
+fig_size: [14,6]
+dpi:300

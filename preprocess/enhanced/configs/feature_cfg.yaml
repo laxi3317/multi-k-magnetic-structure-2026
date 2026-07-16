@@ -1,0 +1,93 @@
+tm_3d: ["Ti","V","Cr","Mn","Fe","Co","Ni","Cu"]
+tm_45d: ["Mo","Tc","Ru","Rh","Pd","W","Re","Os","Ir","Pt"]
+re_4f: ["Ce","Pr","Nd","Pm","Sm","Eu","Gd","Tb","Dy","Ho","Er","Tm","Yb","Lu"]
+act_5f: ["U","Np","Pu","Am"]
+invalid_elem: ["X","D","Du","An","Ln","Xx"]
+
+soc_proxy:
+  Ti: 1
+  V: 1
+  Cr: 1
+  Mn: 1
+  Fe: 1
+  Co: 2
+  Ni: 2
+  Cu: 1
+  Mo: 3
+  Ru: 4
+  Rh: 4
+  Pd: 4
+  W: 6
+  Re: 7
+  Os: 8
+  Ir: 9
+  Pt: 8
+  Ce: 5
+  Pr: 5
+  Nd: 6
+  Sm: 6
+  Eu: 5
+  Gd: 5
+  Tb: 6
+  Dy: 7
+  Ho: 7
+  Er: 7
+  Tm: 7
+  Yb: 6
+  Lu: 5
+  U: 10
+  Np: 10
+  Pu: 10
+  Am: 10
+
+element_period:
+  Ti: 4
+  V: 4
+  Cr: 4
+  Mn: 4
+  Fe: 4
+  Co: 4
+  Ni: 4
+  Cu: 4
+  Mo: 5
+  Tc: 5
+  Ru: 5
+  Rh: 5
+  Pd: 5
+  W: 6
+  Re: 6
+  Os: 6
+  Ir: 6
+  Pt: 6
+  Ce: 6
+  Pr: 6
+  Nd: 6
+  Pm: 6
+  Sm: 6
+  Eu: 6
+  Gd: 6
+  Tb: 6
+  Dy: 6
+  Ho: 6
+  Er: 6
+  Tm: 6
+  Yb: 6
+  Lu: 6
+  U: 7
+  Np: 7
+  Pu: 7
+  Am: 7
+
+frustrated_sg: [143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,216,217,225,226,227,228]
+frustration_idx_int: {7:3,6:3,5:3,4:1,3:0,2:0,1:0,0:0}
+frustration_idx_str: {"cubic":3,"hexagonal":3,"trigonal":3,"tetragonal":1,"orthorhombic":0,"monoclinic":0,"triclinic":0}
+
+magnetic_elems: ["Fe","Co","Ni","Mn","Cr","V","Gd","Tb","Dy","Ho","Er","Tm","Eu","Nd","Pr","Sm","Ce","Yb","U","Np","Pu"]
+rare_earth_elems: ["La","Ce","Pr","Nd","Pm","Sm","Eu","Gd","Tb","Dy","Ho","Er","Tm","Yb","Lu","Sc","Y"]
+strong_soc_elems: ["Pt","Pd","Ir","Os","Re","W","Ta","Hf","Au","Bi","Pb","Tl","Hg","U","Np","Pu","Th","Pa"]
+invalid_elem_strs: ["X","Xx","Du","D","An","Ln"]
+centro_sg_set: [2,10,11,12,13,14,15,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,83,84,85,86,87,88,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,147,148,162,163,164,165,166,167,175,176,191,192,193,194,200,201,202,203,204,205,206,221,222,223,224,225,226,227,228,229,230]
+leak_keywords: ["moment","magn","irrep","propagation","transition_temp","temp_x","experiment_temp","bns","symmform","time_reversal"]
+miss_threshold: 0.3
+float_tolerance: 0.01
+special_frac_tol: 0.01

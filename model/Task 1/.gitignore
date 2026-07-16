@@ -1,0 +1,12 @@
+*.csv
+
+propagation_models/
+*.npy
+*.pkl
+
+*.png
+
+__pycache__/
+*.pyc
+
+data/raw/cif

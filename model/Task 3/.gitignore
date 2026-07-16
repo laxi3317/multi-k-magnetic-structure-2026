@@ -1,0 +1,11 @@
+magnetic_features_final.csv
+*.csv
+!demo_data/*.csv
+cascade_models/
+__pycache__/
+*.pyc
+*.npy
+*.pkl
+*.json
+*.png
+.DS_Store
